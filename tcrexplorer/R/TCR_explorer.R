@@ -49,7 +49,7 @@ server <- function(input, output) {
     if (slc == "d"){
       return(
         read.csv(
-          "tcr.data.demo.csv",
+          system.file("data/tcr.data.demo.csv", package = "tcrexplorer"),
           header = TRUE,
           sep = ",",
           stringsAsFactors = FALSE
@@ -119,4 +119,7 @@ server <- function(input, output) {
   
 }
 
-shinyApp(ui = ui, server = server)
+startTCRExplorer <- function() {
+    app <- shiny::shinyApp(ui = ui, server = server)
+    shiny::runApp(app)
+}

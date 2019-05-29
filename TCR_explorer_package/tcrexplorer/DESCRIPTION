@@ -1,0 +1,13 @@
+Package: tcrexplorer
+Type: Package
+Title: TCR Explorer
+Version: 0.1.0
+Author: Xunzhi Zhang
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports: ggplot2, shiny, Rcpp
